@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html>
-<head>
+<!-- saved from url=(0064)http://localhost:63342/ChooseWisely/courses2.html#selectedcourse -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="new.css"/>
+    <script src="./webpage2_files/jquery.min.js"></script>
+    <script src="./webpage2_files/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./webpage2_files/new.css">
 <title>Project</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="newcss.css"/>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="//www.parsecdn.com/js/parse-1.4.2.min.js"></script>
-    <script type="text/javascript" src="LoginScript.js"></script>
+    <link rel="stylesheet" type="text/css" href="./webpage2_files/newcss.css">
+    <link href="./webpage2_files/css" rel="stylesheet" type="text/css">
+    <link href="./webpage2_files/css(1)" rel="stylesheet" type="text/css">
+    <link href="./webpage2_files/css(2)" rel="stylesheet" type="text/css">
+    <script src="./webpage2_files/jquery.min(1).js"></script>
+    <script src="./webpage2_files/parse-1.4.2.min.js"></script>
+    <script type="text/javascript" src="./webpage2_files/LoginScript.js"></script>
 
 </head>
     <body>
@@ -25,8 +25,8 @@
     </script>
     	<div id="outer">
             <div id="logo1">
-            <img id="engr" src="scuseal.jpg">
-                <a href="http://localhost:63342/ChooseWisely/project1%20copy.html"><img id="choose" src="ChooseWisely.png"></a>
+            <img id="engr" src="./webpage2_files/scuseal.jpg">
+                <a href="http://localhost:63342/ChooseWisely/project1%20copy.html"><img id="choose" src="./webpage2_files/ChooseWisely.png"></a>
             <!--<img id="choose" src="ChooseWisely.png">-->
                 </div>
             <div id="header">
@@ -34,8 +34,8 @@
                 <h1 id="maintitle">Select course to review</h1>
                     </div>
                 <div id="login" style="float : right;">
-                    <h3 id="currentuser"></h3>
-                    <button id="myButton" type="button" class="btn btn-danger" >Logout</button>
+                    <h3 id="currentuser">Welcome kedar</h3>
+                    <button id="myButton" type="button" class="btn btn-danger">Logout</button>
                     <script type="text/javascript">
                         document.getElementById("myButton").onclick = function () {
                             location.href = "SignUpPage.php";
@@ -47,7 +47,7 @@
             <div id="midbody" style="display: inline-block">
     		    <div id="inner" style="float: left;">
     			        <h1 id="coursetitle">COURSES</h1>
-                        <ul id = "coursenames">
+                        <ul id="coursenames">
     				<!--<li><a href="">Introduction to Programming(coen 10)</a></li>
 					<li><a href="">Abstr Data Types & StructuresLab(coen 12)</a></li>
 					<li><a href="">Logic Design Lab(coen 21)</a></li>
@@ -61,32 +61,25 @@
 					<li><a href="">Intro: 3D Animation & Modeling(coen 165)</a></li>
 					<li><a href="">Software Engineering(coen 174)</a>
 					</li>-->
-    			</ul>
+    			<li id="ABCDclass" =="" "courses")="" style="display: list-item;">ABCD</li><li id="Computer" architectureclass="courses" )="" style="display: list-item;">Computer Architecture</li><li id="Web" programming="" 1class="courses" )="" style="display: list-item;">Web Programming 1</li><li id="Operating" systemsclass="courses" )="" style="display: list-item;">Operating Systems</li><li id="Computer" networksclass="courses" )="" style="display: list-item;">Computer Networks</li><li id="Mobile" application="" developmentclass="courses" )="" style="display: list-item;">Mobile Application Development</li></ul>
 
     		    </div>
-                <div id = "reviews" style="float: right">
+                <div id="reviews" style="float: right">
                         <div id="facts">
                     <h1 style="color: #566673;">About Santa Clara School Of Engineering</h1>
                     "The School of Engineering provides an outstanding theoretical and practical experience for both undergraduate and graduate students. Distinguished faculty, academic excellence, personal attention, and a culture of social responsibility are hallmarks of our program."
                         </div>
                 </div>
          </div>
-            <div id="selectedcourse">
-                <h1 id="courseselected">
-                    Computer Architecture
-                </h1>
-            </div>
+            <div id="selectedcourse" style="display: block;"><h1 id="courseselected">Web Programming 1</h1></div>
 
 
-            <div id="feedback">
-
-
-            </div>
+            <div id="feedback" style="display: block;"><div class="comment"><h3 class="name">yash</h3><p class="commentbody">hey</p></div><div class="comment"><h3 class="name">kedar</h3><p class="commentbody">Awesome</p></div></div>
             <script>
                 $('#feedback').hide();
                 $('#selectedcourse').hide();
             </script>
-            <div id = "postcomdiv">
+            <div id="postcomdiv" style="display: block;">
                 Your Feedback matters<br>
                 <input type="text" name="postcomment" id="postcomment" class="comment" placeholder="Post a comment">
                 <input type="submit" id="submit2" name="submitbtn">
@@ -140,9 +133,9 @@
 
     </div>
     <div id="footer">
-        <h4> Copyright &#169; Designed by Kedar Hindupur <a href="google.com">Alpha</a> | <a href="google.com">Beta</a></h4>
+        <h4> Copyright © Designed by Kedar Hindupur <a href="http://localhost:63342/ChooseWisely/google.com">Alpha</a> | <a href="http://localhost:63342/ChooseWisely/google.com">Beta</a></h4>
     </div>
 
-    </body>
+    
 
-    </html>
+    </body></html>
