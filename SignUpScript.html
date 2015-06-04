@@ -1,0 +1,66 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: yash
+ * Date: 5/27/15
+ * Time: 6:03 PM
+ */
+
+
+require 'vendor/autoload.php';
+
+use Parse\ParseClient;
+use Parse\ParseUser;
+
+ParseClient::initialize('mwoyQFUYxJk0cj5taYYaCozKFViCTV6EsUwGGbZk', 'yQ6Xx2YPvUFnEBR08armXfYUyUIwLfT04MtkNtTw', 'Bun6p2an4bci6YvL9rOS1wQvVNVfgPJsKMnNrag7');
+/*use Parse\ParseObject;
+$gameScore = new ParseObject("User");
+
+$gameScore->set("username", "yash1");
+$gameScore->set("password","abcd1234");
+$gameScore->save();*/
+use Parse\ParseObject;
+
+if(isset($_POST["firstname"]))
+{
+    onUserSubmit();
+
+}
+function onUserSubmit()
+{
+
+    $firstName = $_POST["firstname"];
+    $lastName = $_POST["lastname"];
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+    $username = $_POST["username"];
+
+
+    $newUser = new ParseUser();
+    $newUser->set("first_name", $firstName);
+    $newUser->set("last_name", $lastName);
+    $newUser->set("email", $email);
+    $newUser->set("password", $password);
+    $newUser->set("username", $username);
+    try {
+        $newUser->signUp();
+        // Hooray! Let them use the app now.
+    } catch (ParseException $ex) {
+        // Show the error message somewhere and let the user try again.
+        echo $ex->getMessage();
+    }
+}
+function OnUserLogin(){
+    $username = $_POST["username"];
+    $pass = $_POST["loginpassword"];
+
+
+
+
+
+}
+
+
+
+
+?>
